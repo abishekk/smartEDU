@@ -51,4 +51,7 @@ end
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'nifty-generators', :group => :development
 
+
+gem "mocha", group: :test

@@ -62,10 +62,14 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     mime-types (1.25)
     minitest (4.7.5)
+    mocha (0.14.0)
+      metaclass (~> 0.0.1)
     multi_json (1.8.1)
     multipart-post (1.2.0)
+    nifty-generators (0.4.6)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -144,6 +148,8 @@ DEPENDENCIES
   devise
   jbuilder (~> 1.2)
   jquery-rails
+  mocha
+  nifty-generators
   omniauth
   omniauth-google-oauth2
   rails (= 4.0.0)
