@@ -11,7 +11,7 @@ SmartEDU::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => 'registrations' }
 
   get '/auth/:provider/callback' => 'authentications#create'
-  root :to => "home#index"
+  root :to => "forem/forums#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

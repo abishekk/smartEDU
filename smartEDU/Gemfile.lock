@@ -6,6 +6,13 @@ GIT
       activerecord (~> 4.0.0)
 
 GIT
+  remote: git://github.com/radar/forem-bootstrap.git
+  revision: ed6dca40937b5c73e0ab04c912d27313e945362b
+  specs:
+    forem-bootstrap (0.0.1)
+      bootstrap-sass (~> 2.3.2.1)
+
+GIT
   remote: git://github.com/radar/forem.git
   revision: cec97b3fa8da6e26118daaa215525c0742785f34
   branch: rails4
@@ -54,6 +61,8 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    bootstrap-sass (2.3.2.2)
+      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -185,6 +194,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   forem!
+  forem-bootstrap!
   friendly_id!
   jbuilder (~> 1.2)
   jquery-rails
