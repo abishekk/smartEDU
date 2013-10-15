@@ -14,7 +14,13 @@ class User < ActiveRecord::Base
     (authentications.empty? || !password.blank?) && super
   end
 
-
+  def to_s
+    name
+  end
+  
+  def email
+    email_address
+  end
 end
 
 

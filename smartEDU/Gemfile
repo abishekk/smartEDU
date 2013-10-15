@@ -54,4 +54,12 @@ gem 'omniauth-google-oauth2'
 gem 'nifty-generators', :group => :development
 
 
+# Forem for forums
+gem 'forem', :github => "radar/forem", :branch => "rails4"
+gem 'friendly_id', github: "FriendlyId/friendly_id"
+gem 'cancan', git: "https://github.com/nukturnal/cancan.git"
+
+gem 'will_paginate', '3.0.4'
+ 
 gem "mocha", group: :test
+
