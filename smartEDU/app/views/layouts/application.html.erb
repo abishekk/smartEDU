@@ -12,9 +12,10 @@
       Signed in as <%= current_user %> &middot; 
       <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
     <% else %>
-      <%= link_to "Sign in (using Google)", "auth/google_oauth2" %> &middot;
+      <%= link_to "Sign in (using Google)", "auth/google_oauth2" %>
           <!-- main_app.new_user_session_path %> --> 
-      <%= link_to "Register", main_app.new_user_registration_path %>
+      <!--     &middot; -->
+      <!-- <%= link_to "Register", main_app.new_user_registration_path %> -->
     <% end %>
   </nav>
 <div class="offset1 span10">
