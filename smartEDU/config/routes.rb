@@ -8,7 +8,8 @@ SmartEDU::Application.routes.draw do
   mount Forem::Engine, :at => '/forums'
 
   resources :authentications
-  devise_for :users, :controllers => { :registrations => 'registrations' }
+  devise_for :users, 
+             :controllers => { :registrations => 'registrations' }
 
   get '/auth/:provider/callback' => 'authentications#create'
   root :to => "forem/forums#index"
