@@ -12,7 +12,7 @@
       Signed in as <%= current_user %> &middot; 
       <%= link_to "Sign out", main_app.destroy_user_session_path, :method => :delete %>
     <% else %>
-      <%= link_to "Sign in (using Google)", "auth/google_oauth2" %>
+      <%= link_to "Sign in (using Google)", "/auth/google_oauth2" %>
           <!-- main_app.new_user_session_path %> --> 
       <!--     &middot; -->
       <!-- <%= link_to "Register", main_app.new_user_registration_path %> -->
