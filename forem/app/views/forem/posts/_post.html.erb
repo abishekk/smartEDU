@@ -28,6 +28,7 @@
         <time datetime="<%= post.created_at.to_s(:db) -%>"><%= "#{time_ago_in_words(post.created_at)} #{t("ago")}" %></time>
       </a>
       <%= forem_format(post.text) %>
+      <%= youtube_embed(post.text) %>
 
       <% if post.reply_to %>
         <div class='in-reply-to'>
