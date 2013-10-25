@@ -5,6 +5,9 @@ Forem.email_from_address = "please-change-me@example.com"
 Forem.per_page = 20
 Forem.moderate_first_post = false
 
+require 'post_formatters/red_formatter'
+Forem.formatter = Forem::Formatters::RedFormatter
+
 
 # Rails.application.config.to_prepare do
 #   If you want to change the layout that Forem uses, uncomment and customize the next line:
