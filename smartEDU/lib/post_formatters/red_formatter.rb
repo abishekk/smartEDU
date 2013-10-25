@@ -1,17 +1,25 @@
 module Forem
   module Formatters
-    class RedFormatter
-      def self.format(text)
-        htmlRenderer = Redcarpet::Render::HTML.new(render_options = {
-                                                     :no_links => true,
-                                                     :hard_wrap => true
-                                                   })
+    class RedPlus < Redcarpet::Render::HTML
+      def initialize(config = {
+                       :no_links => true,
+                       :hard_wrap => true
+                     })
+        super
+        @markdown = Redcarpet::Markdown.new(self,
+                                           {:fenced_code_blocks => true})
+      end
 
-        markdown = Redcarpet::Markdown.new(htmlRenderer,
-                                           {})
-        markdown.render(text).html_safe
+      def format(text)
+        @markdown.render(text).html_safe
+      end
+
+
+      def block_code(code, language)
+        Pygments.highlight(code, lexer: language)
       end
     end
+
   end 
 end
 

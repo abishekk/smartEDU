@@ -6,7 +6,7 @@ Forem.per_page = 20
 Forem.moderate_first_post = false
 
 require 'post_formatters/red_formatter'
-Forem.formatter = Forem::Formatters::RedFormatter
+Forem.formatter = Forem::Formatters::RedPlus.new
 
 
 # Rails.application.config.to_prepare do
