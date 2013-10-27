@@ -79,4 +79,3 @@ end
 gem 'redcarpet'
 gem 'pygments.rb'
 gem 'zurb-foundation'
-
