@@ -12,7 +12,10 @@ module Forem
                                               :autolink => true,
                                               :fenced_code_blocks => true
                                             })
+        @mathjax_cdn = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
       end
+
+      attr_reader :mathjax_cdn
 
       def format(text)
         @markdown.render(text).html_safe
