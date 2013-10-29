@@ -18,7 +18,10 @@
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
-    <%= csrf_meta_tags %>
+	<%= javascript_include_tag Forem.formatter.mathjax_cdn %>
+	<%= csrf_meta_tags %>
+
+
   </head>
 
   <body>

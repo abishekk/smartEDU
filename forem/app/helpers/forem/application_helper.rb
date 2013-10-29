@@ -1,33 +1,7 @@
-require "uri"
-
 module Forem
   module ApplicationHelper
     include FormattingHelper
     # processes text with installed markup formatter
-    def youtube_embed(post_text)
-      possible_video_urls = URI.extract(post_text)
-      # embed only the first youtube URL
-      youtube_id = nil
-      possible_video_urls.each do |youtube_url|
-        if youtube_url[/youtu\.be\/([^\?]*)/]
-          youtube_id = $1
-        else
-          youtube_url[/^.*((v\/)|(embed\/)|(watch\?))\??v?=?([^\&\?]*).*/]
-          youtube_id = $5
-        end
-        if (!youtube_id.nil?) then
-          break
-        end
-       end
-      # puts "debug " + youtube_id
-      if (youtube_id.nil?)
-        return nil
-      else
-        data = %Q{'<iframe title="YouTube video player" width="640" height="390" src="http://www.youtube.com/embed/#{ youtube_id }" frameborder="0" allowfullscreen></iframe>'}
-        data.html_safe
-      end
-    end
-
     def forem_format(text, *options)
       forem_emojify(as_formatted_html(text))
     end
