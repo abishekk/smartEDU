@@ -1,0 +1,12 @@
+.bubble { 
+    @include panel; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bubble {
+    .description {
+        margin-left: 1em;
+    }
+}
