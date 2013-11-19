@@ -13,3 +13,30 @@
     margin: 10px;
 }
 
+
+.clipart {
+    position: absolute;
+    visibility: hidden;
+}
+
+.clipart.active {
+    display: block;
+    visibility: visible;
+    z-index: 2;
+}
+
+#road {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    left: 200px;
+    overflow: visible;
+    height: 150px;
+}
+
+.slide {
+}
+
+#john {
+    z-index: 2;
+}

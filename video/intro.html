@@ -55,71 +55,72 @@
       </div>
 
 
-      <div class="step slide" data-rotate="90" data-x="700" data-y="0" 
-           style="width: 1024px;">
-        <div class="slideText" style="width: 400px; height: 100px; left: 600px;">
+      <div class="step slide" data-rotate="90" data-x="800" data-y="0" 
+           style="width: 1024px; height: 600px;">
+        <div class="slideText" 
+             style="width: 400px; height: 100px; left: 120px; top: 40px;">
           <p>Our product revolves around the story of John.</p>
         </div>
-        <div id="john">
-          <img src="./john.png"/>
+
+
+        <div id="whatNext" class="clipart" >
+          <img src="./nextWhat.png" width="180px" />
         </div>
-        <div id="think">
-          <img src="./thinkBubble.png" width="100px" />
+        <div id="robotics" class="clipart" >
+          <img src="./robotics.png" width="180px" />
         </div>
-        <div id="degree">
+
+
+        <div id="phd" class="clipart" >
+          <img src="./talkBubble.png" width="200px" />
+        </div>
+
+        <div id="jobs" class="clipart" >
+          <img src="./tjob.png" width="200px" />
+        </div>
+
+        <div id="company" class="clipart" >
+          <img src="./tcomp.png" width="200px" />
+        </div>
+
+
+        <div id="john" class="clipart" >
+          <img src="./john.png" width="100px" />
+        </div>
+        <div id="think"  class="clipart">
+          <img src="./thinkBubble.png" width="150px" />
+        </div>
+        <div id="degree"  class="clipart">
           <img src="./degree.png" width="70px" />
         </div>
-        <div id="school">
-          <img src="./school.png" width="70px" />
+        <div id="school"  class="clipart">
+          <img src="./school.png" width="200px" />
         </div>
-        <div id="running">
-          <img src="./running.png" width="70px" />
+        <div id="running" class="clipart">
+          <img src="./running.png" width="150px" />
         </div>
-        <div id="confused">
-          <img src="./confused.png" width="70px" />
+        <div id="confused" class="clipart">
+          <img src="./confused.png" width="150px" />
         </div>
-        <div id="others">
+        <div id="others" class="clipart">
           <img src="./others.png" width="70px" />
         </div>
 
-        <svg  id="road" viewbox="-100 -10 200 50">
-          <defs>
-            <marker id = "arrowHead" 
-                    viewBox = "0 0 10 10" 
-                    refX = "10" refY = "5" 
-                    markerUnits = "strokeWidth" 
-                    markerWidth = "3" markerHeight = "3"
-                    stroke-width="0"
-                    stroke="black" 
-                    fill="black"
-                    orient="auto">
-              <path d = "M 0 0 L 10 5 L 0 10 L 2 5 z"/>
-            </marker>
-            <g id="hardInst"
-               stroke="black" stroke-width="0.5">
-              <!-- <circle cx="0" cy="0" r="1" -->
-              <!--       fill="cyan"/> -->
-              <path d = "M -1 -1 L 1 1
-                         M 1 -1  L -1 1"/>
-            </g>
-            <g id="setofInst"
-               stroke="black" stroke-width="0.5" fill="none">
-              <ellipse cx="0", cy="0" ry="25" rx="65"/>
-            </g>
-          </defs>                
+        <svg  id="road" viewbox="-100 -5 200 40">
             <g
                stroke="none" stroke-width="1" fill="#313131">
-              <path d = "M -100 0 L 100 0 L 100 30 L -100 30 z"/>
+              <path d = "M -200 0 L 200 0 L 200 30 L -200 30 z"/>
             </g>
             <g
                stroke="#FAFAFA" stroke-width="2" fill="#313131">
               
-              <path d = "M -106 15 L -99 15M -95 15 L -88 15M -84 15 L -77 15M -73 15 L -66 15M -62 15 L -55 15M -51 15 L -44 15M -40 15 L -33 15M -29 15 L -22 15M -18 15 L -11 15M -7 15 L 0 15M 4 15 L 11 15M 15 15 L 22 15M 26 15 L 33 15M 37 15 L 44 15M 48 15 L 55 15M 59 15 L 66 15M 70 15 L 77 15M 81 15 L 88 15M 92 15 L 99 15M 103 15 L 110 15"/>
+              <path d = "M -205 15 L -191 15M -186 15 L -172 15M -167 15 L -153 15M -148 15 L -134 15M -129 15 L -115 15M -110 15 L -96 15M -91 15 L -77 15M -72 15 L -58 15M -53 15 L -39 15M -34 15 L -20 15M -15 15 L -1 15M 4 15 L 18 15M 23 15 L 37 15M 42 15 L 56 15M 61 15 L 75 15M 80 15 L 94 15M 99 15 L 113 15M 118 15 L 132 15M 137 15 L 151 15M 156 15 L 170 15M 175 15 L 189 15M 194 15 L 208 15"/>
+
             </g>
 
             <g stroke="brown" stroke-width="1.5" fill="none">
-              <path d = "M -100 0 L 100 0"/>
-              <path d = "M -100 30 L 100 30"/>
+              <path d = "M -200 0 L 200 0"/>
+              <path d = "M -200 30 L 200 30"/>
             </g>
 
         </svg>
@@ -152,6 +153,7 @@
     <script src="http://localhost:3000/assets/application.js?body=1"></script>
 
     <script src="./impress.js"></script>
+    <script src="./introAnims.js"></script>
     <script>impress().init();</script>
     <!-- <div id="animations" style=""> -->
     <!--   <div id="overlay"> -->
