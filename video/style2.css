@@ -28,3 +28,98 @@ border-radius:.5em;
     background-color: #FFBABA;
     background-image: url('./assets/error.png');
 }
+
+
+
+/* convo convo1s */
+
+.convo1 
+{
+position: relative;
+width: 300px;
+height: 185px;
+padding: 1px;
+background: #fffaf0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border: #837F7F solid 2px;
+}
+
+.convo1:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #fffaf0 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -15px;
+bottom: -15px;
+left: 22%;
+}
+
+.convo1:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 16px 16px 0;
+border-color: #837F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -16px;
+bottom: -18px;
+left: 22%;
+}
+
+
+/* 2 */
+
+.convo2 
+{
+position: relative;
+width: 300px;
+height: 185px;
+padding: 1px;
+background: #fffaf0;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+border: #837F7F solid 2px;
+}
+
+.convo2:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 40px 20px 0;
+border-color: #fffaf0 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -20px;
+bottom: -40px;
+left: 19%;
+}
+
+.convo2:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 41px 21px 0;
+border-color: #837F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -21px;
+bottom: -43px;
+left: 19%;
+}
+
+
