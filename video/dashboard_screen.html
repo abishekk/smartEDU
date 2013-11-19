@@ -26,6 +26,16 @@
     <meta content="authenticity_token" name="csrf-param" />
 <meta content="X86VSIo8ajJCCsm30g7i0el9bnF3XLzW1aY/ns7SaVk=" name="csrf-token" />
 
+
+
+<script>
+function addtoCal()
+{
+ document.getElementById("calAdd").innerHTML="<div class = \"isa_warning\">Cory's appointment added to calendar - <a href = \"\">click here to add details<\a><\div>";
+
+}
+</script>
+
   </head>
 
   <body>
@@ -82,8 +92,18 @@ Hey John
 Maybe we should Skype to iron out some details regarding this project. 
 
 How does the  <a href = "javascript:addtoCal();">Friday, 22nd </a> sound to you?
+</br>
+<div id ="convothumb1" style="height:40px; width:220px; margin-top:29px; margin-left:51px; z-index:2;">
+<img src ="./assets/thumb1.jpg" height="40" width="40"></img> &nbsp; &nbsp; &nbsp; Message from Cory
+</div> 
+</div>
 
- 
+<div id = "calAdd" style="margin-top:50px">
+
+</div>
+
+
+<div class = "convo1" style = "margin-top:50px;">
 </div>
 
       </div>
@@ -150,6 +170,7 @@ How does the  <a href = "javascript:addtoCal();">Friday, 22nd </a> sound to you?
     <script src="http://localhost:3000/assets/registrations.js?body=1"></script>
     <script src="http://localhost:3000/assets/application.js?body=1"></script>
     
+<!--
     <div id="overlay">
     </div>
     <div style="" class="talkBubble">
@@ -159,6 +180,6 @@ How does the  <a href = "javascript:addtoCal();">Friday, 22nd </a> sound to you?
       </div>
       <h4> Some stuff in here describing things </h4>
     </div>
-        
+    -->    
   </body>
 </html>
