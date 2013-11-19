@@ -2,5 +2,14 @@
     text-align: center;
 }
 
+.slideText {
+    background-color: #CCFFCC;
+    border-radius: 10px;
+    border: solid blue 2px;
+    position: absolute;
+}
 
+.slideText p {
+    margin: 10px;
+}
 
