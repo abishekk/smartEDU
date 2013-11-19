@@ -73,11 +73,28 @@ function showCoords(e) {
 }
 document.body.addEventListener("mousedown", showCoords, false);
 
+
+var setText = function(t) {
+    $("#slideText").html(t);
+}
+
+var texts = [ "He wants to be programmer"
+              , "He is awesome really!"
+              , "He parties like there's no tomorrow"
+              , "but wait!  there's  a tomorrow"
+            ];
+var txtPrograms = function() { setText(texts[0]); }
+var txtParties = function() { setText(texts[1]); }
+
+
+
 var animations = [ placeJohn
                    , placeDegree
                    , placeSchool
+                   , txtPrograms
                    , placeRunning
                    , placeConfused
+                   , txtParties
                    , placeAnswers
                    , placeRobotics
                  ];
