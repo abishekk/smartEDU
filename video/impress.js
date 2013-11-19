@@ -203,7 +203,7 @@
         maxScale: 1,
         minScale: 0,
         
-        perspective: 0,
+        perspective: 5,
         
         transitionDuration: 1000
     };
