@@ -78,10 +78,10 @@ var setText = function(t) {
     $("#slideText").html(t);
 }
 
-var texts = [ "He wants to be programmer"
-              , "He is awesome really!"
-              , "He parties like there's no tomorrow"
-              , "but wait!  there's  a tomorrow"
+var texts = [ "John is your everyday student",
+              , "He has his favorite subjects and is awesome at them!"
+              , "He enjoys school life like there's no tomorrow"
+              , "but wait!  there's a tomorrow"
             ];
 var txtPrograms = function() { setText(texts[0]); }
 var txtParties = function() { setText(texts[1]); }
