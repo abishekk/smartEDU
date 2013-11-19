@@ -89,7 +89,7 @@ var nextAnimation = function() {
         setTimeout(nextAnimation, 1000);
     }
 }
-nextAnimation();
-api.next();
+setTimeout(nextAnimation, 5000);
+impress().next();
 //setTimeout(function(){x.value="2 seconds"},2000);
 
