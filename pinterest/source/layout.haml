@@ -1,0 +1,20 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:content => "Pinterest Clone html mockup", :property => "og:title"}
+    %meta{:content => "Pinterest Clone", :property => "og:site_name"}
+    %meta{:content => "Mockup by evendesign http://evendesign.tw", :property => "og:description"}
+    %meta{:content => "http://pinterest-clone.heroku.com/images/fb.png", :property => "og:image"}
+    %meta{:content => "http://pinterest-clone.heroku.com/", :property => "og:url"}
+    = stylesheet_link_tag( "main" )
+    = javascript_include_tag( "https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js", "jquery.masonry.min.js", "all" )
+    = yield_content :head
+  %body{:class => page_classes}
+    %header#hd
+      = yield_content :header
+    .wrapper
+      #bd
+        = yield
+    %a{:href => "https://github.com/evenwu/pinterest-clone-layout"}
+      %img{:alt => "Fork me on GitHub", :src => "https://a248.e.akamai.net/assets.github.com/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67", :style => "position: fixed; top: 0; left: 0; border: 0; z-index: 1000;"}
